@@ -1,0 +1,15 @@
+@use "base/variables";
+
+@media screen and (max-width: 600px) {
+    .footer {
+        &__wrapper {
+            grid-template: repeat(3, 1fr) / repeat(1, 1fr);
+            place-self: center;
+        }
+
+        &__symbol,
+    &__created {
+        place-self: center;
+    }
+    }
+}

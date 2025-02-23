@@ -1,0 +1,52 @@
+@use "base/variables";
+
+.consultation {
+    margin-top: 80px;
+
+    &__wrapper {
+        margin-top: 70px;
+        width: 100%;
+        min-height: 166px;
+        border: 1px solid variables.$color-light-grey;
+        background: variables.$color-white;
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -32%;
+        background: variables.$color-white;
+        width: 120px;
+    }
+
+    &__icons {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__form {
+        margin: 66px 0 0 160px;
+
+        input {
+            width: 270px;
+            height: 50px;
+            border-radius: 20px;
+            border: 1px solid variables.$color-light-grey;
+            padding: 0 30px;
+            color: variables.$color-light-black;
+            font-size: 14px;
+            font-weight: 100;
+        }
+    }
+
+    &__button {
+        width: 200px;
+        background: variables.$color-white;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -14%;
+    }
+}

@@ -1,0 +1,58 @@
+@use "base/variables";
+
+.promo {
+    min-height: 680px;
+    padding-bottom: 64px;
+    background: url('../img/promo/background.jpg') center center / cover no-repeat;
+
+    &__figures {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 164px;
+        margin-top: 44px;
+    }
+
+    &__circle {
+        width: 10px;
+        height: 10px;
+        background: variables.$color-white;
+        border-radius: 100%;
+    }
+
+    &__divider {
+        width: 389px;
+        height: 1px;
+        background: variables.$color-white;
+    }
+
+    &__wrapper {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+
+    &__items {
+        width: 260px;
+        height: 128px;
+    }
+
+    &__img {
+        width: 64px;
+        height: 55px;
+        margin: 0 auto;
+    }
+
+    &__descr {
+        margin-top: 8px;
+        line-height: 22px;
+    }
+
+    &__button {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

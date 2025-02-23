@@ -1,0 +1,59 @@
+@use "base/variables";
+
+@media screen and (min-width: 901px) {
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        height: 50vh;
+
+        a {
+            transition: all 0.3s;
+
+            &:hover {
+                color: variables.$color-dark-coral;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 401px) {
+    .menu {
+        &__phone {
+            display: none;
+        }
+
+        &__button {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu {
+        &__block {
+            width: 190px;
+        }
+
+        &__phone {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin: 50px auto 0 auto;
+        }
+
+        &__symbol {
+            transform: translateX(18%);
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@use "sass:meta";
+
+@include meta.load-css('base/variables');
+@include meta.load-css('base/mixins');
+@include meta.load-css('blocks/advantages/advantages');
+@include meta.load-css('blocks/advantages/advantages-media');
+@include meta.load-css('blocks/agent/agent');
+@include meta.load-css('blocks/agent/agent-media');
+@include meta.load-css('blocks/consultation/consultation');
+@include meta.load-css('blocks/consultation/consultation-media');
+@include meta.load-css('blocks/footer/footer');
+@include meta.load-css('blocks/footer/footer-media');
+@include meta.load-css('blocks/header/header');
+@include meta.load-css('blocks/header/header-media');
+@include meta.load-css('blocks/job/job');
+@include meta.load-css('blocks/job/job-media');
+@include meta.load-css('blocks/managers/managers');
+@include meta.load-css('blocks/managers/managers-media');
+@include meta.load-css('blocks/map/map');
+@include meta.load-css('blocks/map/map-media');
+@include meta.load-css('blocks/promo/promo');
+@include meta.load-css('blocks/promo/promo-media');
+@include meta.load-css('blocks/questions/questions');
+@include meta.load-css('blocks/questions/questions-media');
+@include meta.load-css('blocks/reviews/reviews');
+@include meta.load-css('blocks/reviews/reviews-media');
+@include meta.load-css('blocks/scheme/scheme');
+@include meta.load-css('blocks/scheme/scheme-media');
+@include meta.load-css('blocks/title/title');
+@include meta.load-css('blocks/title/title-media');
+@include meta.load-css('blocks/buttons/buttons');
+@include meta.load-css('blocks/buttons/buttons-media');
+@include meta.load-css('blocks/divider/divider');
+@include meta.load-css('blocks/divider/divider-media');
+@include meta.load-css('blocks/container/container');
+@include meta.load-css('blocks/container/container-media');
+@include meta.load-css('blocks/prices/prices');
+@include meta.load-css('blocks/prices/prices-media');
+@include meta.load-css('blocks/end/end');
+@include meta.load-css('blocks/end/end-media');
+@include meta.load-css('blocks/menu/menu');
+@include meta.load-css('blocks/menu/menu-media');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,15 @@
+@use "base/variables";
+
+.divider {
+    margin: 20px auto 0 auto;
+    width: 148px;
+    height: 1px;
+    border: none;
+    background: variables.$color-dark-coral;
+
+    &__end {
+        width: 100%;
+        margin-top: 22px;
+        background: variables.$color-light-grey;
+    }
+}

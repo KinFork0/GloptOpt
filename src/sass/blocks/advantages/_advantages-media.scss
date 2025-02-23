@@ -1,0 +1,92 @@
+@use "base/variables";
+
+@media screen and (max-width: 1200px) {
+    .advantages {
+        &__items {
+            width: calc((1100px / 2) - 40px);
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .advantages {
+        &__wrapper {
+            grid-template: repeat(3, 70px) 150px / repeat(2, 1fr);
+        }
+
+        &__items {
+            grid-template: repeat(1, minmax(70px, 150px)) / repeat(1, 56px 6fr);
+            width: calc((944px / 2) - 40px);
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .advantages {
+        &__wrapper {
+            grid-template: repeat(3, 70px) 150px / repeat(2, 1fr);
+            column-gap: 30px;
+        }
+
+        &__items {
+            grid-template: repeat(1, minmax(70px, 150px)) / repeat(1, 56px 6fr);
+            width: calc((871px / 2) - 40px);
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .advantages {
+        &__wrapper {
+            grid-template: repeat(3, calc(48px + 60px - 22px)) calc(188px - 19px) / repeat(2, 1fr);
+            column-gap: 20px;
+        }
+
+        &__items {
+            grid-template: repeat(1, minmax(70px, calc(10px + 188px))) / repeat(1, 50px 6fr);
+            width: calc((771px / 2) - 40px + 20px);
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .advantages {
+        &__wrapper {
+            grid-template: repeat(6, calc(48px + 60px - 10px)) / repeat(1, 1fr);
+            column-gap: 0;
+        }
+
+        &__items {
+            grid-template: repeat(1, minmax(70px, calc(188px - 40px))) / repeat(1, 50px 6fr);
+            width: calc((800px / 2));
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .advantages {
+        &__wrapper {
+            grid-template: repeat(6, calc(48px + 60px)) / repeat(1, 1fr);
+        }
+
+        &__items {
+            grid-template: repeat(1, minmax(70px, calc(188px - 15px))) / repeat(1, 50px 6fr);
+            width: calc((750px / 2));
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .advantages {
+        &__wrapper {
+            grid-template: repeat(6, calc(48px + 105px)) / repeat(1, 1fr);
+            row-gap: 15px;
+        }
+
+        &__items {
+            grid-template: repeat(1, minmax(70px, calc(188px + 90px))) / repeat(1, 50px 6fr);
+            width: calc((550px / 2));
+        }
+    }
+}

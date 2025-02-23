@@ -1,0 +1,221 @@
+@use "base/variables";
+
+@media screen and (max-width: 1200px) {
+    .header {
+        &__wrapper {
+            grid-template: repeat(1, 1fr) / repeat(1, 96px 1fr 136px 167px);
+        }
+
+        &__navigation {
+            margin: 0 20px;
+        }
+
+        &__items {
+            column-gap: 15px;
+        }
+
+        &__border-left {
+            &::before {
+                left: 4.5px;
+            }
+
+            &-2 {
+                &::before {
+                    left: -12px;
+                }
+            }
+
+            &-3 {
+                &::before {
+                    left: -5px;
+                }
+            }
+
+            &-4 {
+                &::before {
+                    left: -12px;
+                }
+            }
+
+            &-5 {
+                &::before {
+                    left: -10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .header {
+        padding-top: 20px;
+        min-height: 114px;
+
+        &__wrapper {
+            grid-template: repeat(1, 1fr) / repeat(1, 90px 1fr 140px 157px);
+        }
+
+        &__items {
+            grid-template: repeat(1, 1fr) / repeat(1, 1fr 3fr 1fr 3fr 1fr 1fr);
+        }
+
+        &__border-left {
+            &::before {
+                left: -4.5px;
+            }
+
+            &-2,
+            &-3 {
+                &::before {
+                    left: -7.5px;
+                }
+            }
+
+            &-4 {
+                &::before {
+                    left: -10px;
+                }
+            }
+
+            &-5 {
+                &::before {
+                    left: -9px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        padding-top: 15px;
+        min-height: 99px;
+
+        &__wrapper {
+            grid-template: repeat(1, 1fr) / repeat(1, 80px 1fr 140px 147px);
+        }
+
+        &__navigation {
+            margin: 0 10px;
+        }
+
+        &__items {
+            column-gap: 10px;
+            grid-template: repeat(1, 1fr) / repeat(1, 1fr 3fr 1fr 3fr 1fr 1fr);
+        }
+
+        &__border-left {
+
+            &::before {
+                left: -3.5px;
+                height: 18px;
+                top: 3px;
+            }
+
+            &-2 {
+                &::before {
+                    left: -7.5px;
+                }
+            }
+
+            &-3 {
+                &::before {
+                    left: -5px;
+                }
+            }
+
+            &-4 {
+                &::before {
+                    left: -6px;
+                }
+            }
+
+            &-5 {
+                &::before {
+                    left: -6.5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        &__wrapper {
+            grid-template: repeat(1, 1fr) / repeat(1, 70px 2fr 80px 1.5fr 125px);
+            column-gap: 10px;
+        }
+
+        &__items {
+            display: none;
+        }
+
+        img {
+            display: flex;
+            grid-area: 1 / 3 / 1 / 3;
+        }
+
+        &__phone {
+            padding-left: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        padding-top: 10px;
+
+        &__phone {
+            padding-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        &__wrapper {
+            grid-template: repeat(1, 1fr) / repeat(1, 70px 1fr 80px 2fr 125px);
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        padding-top: 5px;
+
+        &__wrapper {
+            grid-template: repeat(1, 1fr) / repeat(1, 70px 0.3fr 80px 2.3fr 100px);
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        min-height: 89px;
+
+        &__wrapper {
+            grid-template: repeat(1, 1fr) / repeat(1, 40px 0 70px 3fr 100px);
+            column-gap: 5px;
+        }
+
+        &__phone {
+            padding-left: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header {
+        padding-top: 3px;
+
+        &__wrapper {
+            grid-template: repeat(1, 1fr) / repeat(1, 70px 3fr 70px);
+            column-gap: 3px;
+        }
+
+        &__phone {
+            padding-left: 5px;
+            display: none;
+        }
+    }
+}

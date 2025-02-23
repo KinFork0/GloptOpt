@@ -1,0 +1,45 @@
+@use "base/variables";
+
+.map {
+    min-height: 500px;
+    padding-top: 170px;
+    background: url('../img/map/background.jpg') center center / cover no-repeat;
+
+    &__block {
+        position: relative;
+        padding: 26px 0 28px 22px;
+        margin: 0 360px 0 auto;
+        width: 312px;
+        min-height: 160px;
+        background: variables.$color-white;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -60px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 30px solid transparent;
+            border-right: 30px solid variables.$color-white;
+        }
+    }
+
+    &__meter,
+    &__address,
+    &__phone,
+    &__email {
+        margin-top: 4px;
+    }
+
+    &__phone,
+    &__email {
+        color: variables.$color-signal-black-2;
+        cursor: inherit;
+        display: block;
+
+        &:hover {
+            text-decoration: none;
+            color: variables.$color-signal-black-2;
+        }
+    }
+}

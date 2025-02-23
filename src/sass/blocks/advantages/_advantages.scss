@@ -1,0 +1,31 @@
+@use "base/variables";
+
+.advantages {
+    min-height: 560px;
+    padding: 55px 0;
+
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(3, 70px) 130px / repeat(2, 1fr);
+        margin: 35px auto 0 auto;
+        width: 100%;
+        min-height: 450px;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template: repeat(1, minmax(70px, 130px)) / repeat(1, 56px 6fr);
+        column-gap: 10px;
+    }
+
+    &__img {
+        padding-top: 10px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

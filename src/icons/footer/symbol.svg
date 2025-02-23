@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 13px;
+        opacity: 0.6;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: "Myriad Pro";
+      }
+    </style>
+  </defs>
+  <text id="_" data-name="©" class="cls-1" x="3.807" y="8.746"><tspan x="3.807">©</tspan></text>
+</svg>

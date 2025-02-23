@@ -1,0 +1,35 @@
+@use "base/variables";
+
+.scheme {
+    padding: 52px 0 24px 0;
+    min-height: 434px;
+
+    &__wrapper {
+        margin: 30px auto 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 40px;
+        row-gap: 45px;
+        min-height: 310px;
+    }
+
+    &__items {
+        width: 250px;
+        height: 115px;
+    }
+
+    &__icons {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__subtitle {
+        margin-top: 10px;
+    }
+
+    &__descr {
+        margin-top: 4px;
+    }
+}

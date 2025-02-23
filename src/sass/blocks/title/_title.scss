@@ -1,0 +1,75 @@
+@use "base/variables";
+
+.title {
+    font-weight: 200;
+    color: variables.$color-white;
+
+    &_tac {
+        text-align: center;
+    }
+
+    &_ttu {
+        text-transform: uppercase;
+    }
+
+    &_mb0 {
+        margin-bottom: 0;
+    }
+
+    &_cdc {
+        color: variables.$color-dark-coral;
+    }
+
+    &_csb-2 {
+        color: variables.$color-signal-black-2;
+    }
+
+    &_fw700 {
+        font-weight: 700;
+    }
+
+    &_fw300 {
+        font-weight: 300;
+    }
+
+    &_fw100 {
+        font-weight: 100;
+    }
+
+    &_fz72 {
+        font-size: 72px;
+        color: variables.$color-dark-coral;
+    }
+
+    &_fz42 {
+        font-size: 42px;
+    }
+
+    &_fz28 {
+        font-size: 29px;
+    }
+
+    &_fz26 {
+        font-size: 26px;
+    }
+
+    &_fz24 {
+        font-size: 24px;
+    }
+
+    &_fz20 {
+        font-size: 20px;
+    }
+
+    &_fz16 {
+        font-size: 16px;
+    }
+
+    &_fz14 {
+        font-size: 14px;
+    }
+
+    &_fz12 {
+        font-size: 12px;
+    }
+}

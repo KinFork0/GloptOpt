@@ -1,0 +1,21 @@
+@use "base/variables";
+
+@media screen and (max-width: 1100px) {
+    .prices {
+        &__wrapper {
+            justify-content: center;
+            column-gap: 40px;
+            row-gap: 30px;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .prices {
+        &__wrapper {
+            column-gap: 0;
+            row-gap: 20px;
+        }
+    }
+}

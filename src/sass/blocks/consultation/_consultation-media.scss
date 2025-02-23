@@ -1,0 +1,106 @@
+@use "base/variables";
+
+@media screen and (max-width: 1100px) {
+    .consultation {
+        &__form {
+            margin: 66px 0 0 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .consultation {
+        &__form {
+            margin: 66px 0 0 85px;
+
+            input {
+                width: 220px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .consultation {
+        &__form {
+            margin: 66px 0 0 70px;
+
+            input {
+                width: 200px;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .consultation {
+        &__form {
+            margin: 66px 0 0 55px;
+
+            input {
+                width: 180px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .consultation {
+        &__form {
+            margin: 66px 0 0 35px;
+
+            input {
+                width: 160px;
+                height: 45px;
+                padding: 0 5px;
+            }
+        }
+
+        &__button {
+            width: 180px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .consultation {
+        &__wrapper {
+            min-height: 220px;
+        }
+
+        &__form {
+            margin: 66px 0 0 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            input {
+                width: 200px;
+                padding: 0 15px;
+            }
+        }
+
+        &__img {
+            top: -25%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .consultation {
+        &__wrapper {
+            min-height: 260px;
+        }
+
+        &__form {
+            gap: 0;
+            row-gap: 10px;
+        }
+
+        &__img {
+            top: -20%;
+        }
+    }
+}

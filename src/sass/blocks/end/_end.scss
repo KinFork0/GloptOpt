@@ -1,0 +1,45 @@
+@use "base/variables";
+
+.end {
+    min-height: 200px;
+    padding: 24px 0;
+    background: variables.$color-signal-black;
+
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(1, 80px) / repeat(1, 0.6fr 3fr 2fr);
+    }
+
+    &__img {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        align-self: center;
+    }
+
+    &__items {
+        display: flex;
+        place-self: end;
+        column-gap: 15px;
+    }
+
+    &__content {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__button {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

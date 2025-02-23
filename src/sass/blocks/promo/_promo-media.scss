@@ -1,0 +1,113 @@
+@use "base/variables";
+
+@media screen and (max-width: 1200px) {
+    .promo {
+        &__divider {
+            width: 340px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .promo {
+        &__divider {
+            width: 292px;
+        }
+
+        &__items {
+            width: 230px;
+            height: 148px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .promo {
+        &__wrapper {
+            justify-content: center;
+            column-gap: 44px;
+            flex-wrap: wrap;
+            row-gap: 15px;
+        }
+
+        &__items {
+            width: 260px;
+            height: 128px;
+        }
+
+        &__figures {
+            margin-top: 38px;
+        }
+
+        &__divider {
+            width: 255px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .promo {
+        &__wrapper {
+            column-gap: 50px;
+        }
+
+        &__figures {
+            margin-top: 35px;
+        }
+
+        &__divider {
+            width: 206px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .promo {
+        &__figures {
+            margin-top: 32px;
+        }
+
+        &__divider {
+            width: 160px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .promo {
+        &__figures {
+            padding: 0 120px;
+            margin-top: 25px;
+        }
+
+        &__divider {
+            width: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .promo {
+        &__figures {
+            padding: 0 70px;
+            margin-top: 20px;
+        }
+
+        &__divider {
+            width: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .promo {
+        &__figures {
+            padding: 0 40px;
+            margin-top: 20px;
+        }
+
+        &__divider {
+            width: 85px;
+        }
+    }
+}

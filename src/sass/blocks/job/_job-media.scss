@@ -1,0 +1,56 @@
+@use "base/variables";
+
+@media screen and (max-width: 1200px) {
+    .job {
+        &__items {
+            width: 340px;
+            min-height: 340px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .job {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        &__subtitle {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .job {
+        &__wrapper {
+            margin-top: 30px;
+            gap: 0;
+            row-gap: 30px;
+        }
+
+        &__items {
+            width: 370px;
+            min-height: 370px;
+        }
+
+        &__text {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .job {
+        &__wrapper {
+            margin-top: 20px;
+            row-gap: 15px;
+        }
+
+        &__text {
+            margin-top: 10px;
+        }
+    }
+}
